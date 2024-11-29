@@ -1,0 +1,355 @@
+<script src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/js/splide.min.js"></script>
+<link href="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/css/splide.min.css" rel="stylesheet"/>
+<script src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/js/splide-extension-auto-scroll.min.js"></script>
+<style>
+  .bg-celeste {
+    background-color: #def1ff;
+  }
+
+  .carrusel {
+    display: flex;
+    justify-content: flex-end !important;
+    width: 100%;
+  }
+  .carrusel__img {
+    width: 349px;
+    height: 429px;
+   margin-right: 36px;
+  }
+
+
+  .item-carousel img {
+    margin-bottom: 8px;
+  }
+
+  .item-carousel {
+    background-color: #fff;
+    padding: 24px 20px;
+    border-radius: 20px;
+    height: 200px;
+  }
+
+  .item-text {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .item-text .item-title {
+    margin-bottom: 4px !important;
+    margin-top: 4px;
+  }
+
+  .item-text .item-title ~ p {
+    margin-bottom: 0;
+  }
+
+  .item-title {
+    color: #20a6ff;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .contenedor-botones {
+    display: flex;
+    gap: 8px;
+    margin-top: 22px;
+    padding-left: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .contenedor-botones {
+      margin-top: 0;
+      justify-content: center;
+    }
+  }
+
+  .splide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .splide_slide_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .splide__arrows {
+    top: 240px;
+    z-index: 50;
+  }
+
+  .caja-centrado {
+    height: 320px;
+  }
+
+  .splide__arrow svg {
+    fill: #20a4ff;
+    height: 1.2em;
+    width: 1.2em;
+    margin-top: 2px;
+  }
+
+  .splide__arrow {
+    background: transparent;
+    border: 1px solid #20a4ff;
+  }
+
+  #splide2 .splide__arrows.splide__arrows--ltr {
+    position: relative;
+    width: 102px;
+    left: 0;
+    transform: translateX(-14px);
+    top: 218px;
+    z-index: 0;
+  }
+
+  .item-title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #20a4ff;
+  }
+
+  .splide__slide p:last-child {
+    font-size: 16px;
+    line-height: 20px;
+    color: #004470;
+  }
+
+
+
+  #splide2 .splide__slide {
+    padding: 20px 32px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .splide__track {
+    margin-top: 32px;
+}
+
+@media (max-width: 1110px){
+    /* #splide2 {
+        width: 900px;
+    } */
+
+    #splide2 .splide__arrows.splide__arrows--ltr {
+    top: 266px;
+  }
+}
+.splide__slide__container.marco-gobierno img{
+    margin-bottom: 4px;
+}
+
+@media (max-width: 1110px){
+  #splide2 .splide__arrows.splide__arrows--ltr {
+    top: 240px;
+  }
+}
+
+
+
+@media (max-width: 900px){
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+  }
+  .titlePrin.box-title.marco-de-gobierno {
+    text-align: center;
+  }
+
+  #splide2 .splide__arrows.splide__arrows--ltr {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 220px;
+    }
+
+}
+
+@media (max-width: 519px){
+  #splide2 .splide__arrows.splide__arrows--ltr {
+    top: 242px;
+  }
+}
+
+@media (max-width: 450px){
+  #splide2 .splide__arrows.splide__arrows--ltr {
+    top: 212px;
+  }
+}
+
+
+@media (max-width: 519px){
+  #splide2 .splide__arrows.splide__arrows--ltr {
+        top: 212px;
+    }
+
+  .carrusel {
+    margin-left: 0;
+  }
+
+  #splide2 .splide__slide { 
+    width: 290px !important;
+  }
+}
+
+
+.section.linear.marco-gobierno-box {
+  padding-bottom: 0;
+}
+
+.item-description {
+  font-size: 16px;
+  line-height: 20px;
+}
+.box-slide{
+  width: 70%;
+}
+@media (max-width: 900px) {
+  .carrusel__img{
+    margin-top: 60px !important;
+    margin-right: 0 !important;
+  }
+  .box-slide{
+    width: 100%;
+  }
+  }
+
+</style>
+<div id="marco-gobierno" class="section linear bg-celeste marco-gobierno-box">
+  <div class="carrusel">
+    <img
+      class="carrusel__img"
+      src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/persona-con-planeta.png"
+      alt="hombre"
+    />
+    <div class="box-slide">
+      <h2 class="titlePrin titleCont text-center mb-32">
+        Conoce los frentes que conforman nuestro <br>Marco de gobierno
+        </h2>
+      <section
+        class="splide caja"
+        id="splide2"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track caja2">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="splide__slide__container marco-gobierno">
+                <img
+                  src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/gobierno/directorio.png"
+                  alt="directorio"
+                />
+                <div class="item-text">
+                    <div class="item-title">Directorio</div>
+                    <div class="item-description">
+                      Aprueba el plan y la política y conocer los avances ASG y la
+                      relación con multilaterales.
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container marco-gobierno">
+                <img
+                  src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/gobierno/comite-direccion.png"
+                  alt="comite dirección"
+                />
+                <div class="item-text">
+                  <div class="item-title">Comité de dirección</div>
+                  <div class="item-description">
+                    Propone el plan y la política e impulsar la implementación. <br> <br>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container marco-gobierno">
+                <img
+                  src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/gobierno/comite-sensiblidad.png"
+                  alt="comite sostenibilidad"
+                />
+                <div class="item-text">
+                  <div class="item-title">Comité de Sostenibilidad</div>
+                  <div class="item-description">Supervisa el cumplimiento del plan. <br> <br></div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container marco-gobierno">
+                <img
+                  src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/gobierno/subgerencia.png"
+                  alt="subgerente sostenibilidad"
+                />
+                <div class="item-text">
+                  <div class="item-title">Subgerente Sostenibilidad</div>
+                  <div class="item-description">
+                    Trabaja con las áreas implicadas el desarrollo del plan.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container marco-gobierno">
+                <img
+                  src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/gobierno/equipo.png"
+                  alt="equipo de trabajo"
+                />
+                <div class="item-text">
+                  <div class="item-title">Equipo de Trabajo</div>
+                  <div class="item-description">
+                    Realiza el seguimiento y desarrollo del plan y la
+                    estrategia.
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <section class="splide" aria-label="Custom Arrows Example">
+            <div class="splide__arrows">
+              <button class="splide_arrow splide_arrow--prev">Prev</button>
+              <button class="splide_arrow splide_arrow--next">Next</button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#splide2", {
+      type: "loop",
+      gap: "22px",
+      perPage: 4,
+      pagination: false,
+      focus: "center",
+      drag: "free",
+        autoScroll: {
+        speed: 0.8,
+      },
+      breakpoints: {
+        1600: {
+            perPage: 4,
+        },
+        1499: {
+            perPage: 3,
+        },1024: {
+            perPage: 2,
+        },900: {
+            perPage: 2,
+        },768: {
+            perPage: 2,
+        },450: {
+            perPage: 1,
+            padding: '20px'
+        }
+      }
+
+      // autoplay: 'true'
+      } ).mount(window.splide.Extensions)
+
+  });
+</script>
