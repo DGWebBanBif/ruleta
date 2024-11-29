@@ -1,0 +1,145 @@
+
+<style>
+  .splide {
+    margin-top: 0;
+  }
+  .splide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.splide_slide_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide__arrows {
+  top: 240px;
+  z-index: 50;
+}
+
+.caja-centrado {
+  height: 320px;
+}
+
+.splide__arrow svg {
+  fill: #20A4FF;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.splide__arrow {
+  background: transparent;
+  border: 1px solid #20A4FF;
+  margin-top: 10px;
+}
+
+#splide .splide__arrows.splide__arrows--ltr {
+position: relative;
+  width: 102px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  z-index: 10;
+}
+.caja-centrado {
+  height: 220px;
+}
+
+.section.linear.aliados {
+padding: 40px 0;
+}
+.caja2{
+    margin-top: 10px !important;
+}
+
+</style>
+
+<div class=" bg-azul section linear aliados banner-prod" id="testim">
+  <div class="centrado caja-centrado">
+    <h2 class="titlePrin titleCont text-center">Aliados</h2>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 des-center">
+            <section class="splide caja" id="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track caja2">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/asociacion-IF-2.png" alt="asociacion if">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/ensenia-peru.png" alt="enseña peru">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/asoc-sempa.png" alt="asociacion sempa">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/splash.png" alt="splash">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/techo.png" alt="techo">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/mike-rescate.png"  alt="mike rescate">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                          <li class="splide__slide">
+                            <img src="https://www.banbif.com.pe/Portals/0/Images/sostenibilidad/aliados/aldeas.png" alt="aldeas" style="width: 160px !important;">
+                          <!-- <div class="splide_slide_container">
+                            </div> -->
+                          </li>
+                      </ul>
+                      <section class="splide" aria-label="Custom Arrows Example">
+                        <div class="splide__arrows">
+                          <button class="splide_arrow splide_arrow--prev">
+                            Prev
+                          </button>
+                          <button class="splide_arrow splide_arrow--next">
+                            Next
+                          </button>
+                        </div>
+                      </section>
+                </div>
+              </section>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    new Splide( '#splide', {
+    type: 'loop',
+    perPage: 5,
+    gap: '8px',
+    pagination: false,
+    focus  : 'center',
+    drag   : 'free',
+    autoScroll: {
+    speed: 2,
+  },
+  breakpoints: {
+      918: {
+        perPage: 3
+      },
+      768: {
+        perPage: 2
+      }
+    }
+
+  // autoplay: 'true'
+  } ).mount(window.splide.Extensions)
+  })
+  
+</script>
