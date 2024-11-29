@@ -1,0 +1,227 @@
+@import './fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-lato;
+}
+
+#input-code:focus {
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno */
+}
+
+
+p {
+  @apply text-banbif-text;
+}
+
+[data-accordion] button[aria-expanded="true"] {
+  background-color: transparent !important;
+}
+
+[data-accordion] button:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-accordion] .hidden {
+  display: block !important;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}
+
+[data-accordion] div:not(.hidden) {
+  max-height: 1000px;
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
+}
+
+[data-accordion-icon] {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+[aria-expanded="true"] [data-accordion-icon] {
+  transform: rotate(180deg);
+}
+
+
+#indicador-ruleta {
+  animation: mover-indicador 10s forwards;
+  transform-origin: center;
+}
+
+.mover-indicador {
+  animation: mover-indicador 10s cubic-bezier(0.42, 0, 0.58, 1)  forwards;
+}
+
+@keyframes girar-iphone {
+    0% {
+      transform: rotate(0deg); /* Empieza más lento */
+    }
+    80% {
+      transform: rotate(3615deg); /* Empieza más lento */
+    }
+    95% {
+      transform: rotate(3590deg);; /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3600deg); /* Gira 10 veces */
+    }
+  }
+  
+.girar-iphone {
+  animation: girar-iphone 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; /* Empieza más lento y termina más lento */
+}
+
+
+@keyframes girar-soles50 {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3930deg); 
+    }
+    95% {
+      transform: rotate(3905deg);; /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3915deg); 
+    }
+  }
+  
+.girar-soles50 {
+  animation: girar-soles50 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+
+@keyframes girar-soles100 {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3885deg); 
+    }
+    95% {
+      transform: rotate(3860deg);; /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3870deg); 
+    }
+  }
+  
+.girar-soles100 {
+  animation: girar-soles100 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+@keyframes girar-100opc {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3840deg); 
+    }
+    95% {
+      transform: rotate(3815deg); /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3825deg); 
+    }
+  }
+  
+.girar-100opc {
+  animation: girar-100opc 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+@keyframes girar-500opc {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3795deg); 
+    }
+    95% {
+      transform: rotate(3770deg);; /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3780deg); 
+    }
+  }
+  
+.girar-500opc {
+  animation: girar-500opc 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+
+@keyframes girar-200opc {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3750deg); 
+    }
+    95% {
+      transform: rotate(3725deg); /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3735deg); 
+    }
+  }
+  
+.girar-200opc {
+  animation: girar-200opc 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+
+@keyframes girar-1000opc {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3705deg); 
+    }
+    95% {
+      transform: rotate(3680deg);; /* Gira 10 veces */
+    }
+    100% {
+      transform: rotate(3690deg); 
+    }
+  }
+  
+.girar-1000opc {
+  animation: girar-1000opc 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+@keyframes girar-soles20 {
+    0% {
+      transform: rotate(0deg); 
+    }
+    80% {
+      transform: rotate(3660deg);
+    }
+    95% {
+      transform: rotate(3620deg);
+    }
+    100% {
+      transform: rotate(3645deg); 
+    }
+  }
+  
+.girar-soles20 {
+  animation: girar-soles20 10s cubic-bezier(0.42, 0, 0.58, 1) forwards; 
+}
+
+
+.banbif-button-hover:hover {
+  box-shadow: 0 2px 2px rgb(82 112 148 / 14%), 0 3px 1px rgb(82 112 148 / 12%), 0 1px 5px rgb(82 112 148 / 20%);
+}
